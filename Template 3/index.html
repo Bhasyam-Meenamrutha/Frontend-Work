@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0px;
+            font-family: sans-serif;
+        }
+
+        nav {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+           
+
+        }
+
+        .role {
+            display: flex;
+            align-items: center;
+            line-height: 0.4;
+            
+        }
+          
+
+        .role img {
+            width: 10%;
+            height: 10%;
+            margin-right: 10px;
+        }
+
+        .nav-links{
+            
+            width: 45%;
+            display: flex;
+            justify-content: space-evenly;
+            
+
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            
+        }
+        .about-container{
+            background-color:rgba(0, 0, 0, 0.925);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 3% 30px;
+            
+        }
+        .about-me{
+            line-height: 0.6;
+        }
+        .projects-link,.download-cv-link{
+            color: white;
+            text-decoration: none;
+            background-color: green;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+        }
+        .download-cv-link{
+            background-color: inherit !important;
+            border: 1px solid white;
+            margin-left: 10px;
+
+        }
+
+        .about-container img{
+            width: 30%;
+            height: 30%;
+        }
+        
+
+        .about-title{
+            font-size: 3rem;
+            
+        }
+        .about-subtitle{
+            font-size: 2rem;
+            
+        }
+        .about-description{
+            font-size: 1.2rem;
+            margin-bottom: 5%;
+            color: gray;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="role">
+            <img src="passport.jpg" alt="profile" >
+            <div class="name">
+            <h1>Bhasyam Meenamrutha</h1>
+            <p>Software Developer | Student</p>
+            </div>
+        </div>
+        <div class="nav-links">
+            
+                <a href="">About me</a> 
+                <a href="">Achievements</a> 
+                <a href="">Education</a> 
+                <a href="">Projects</a> 
+                <a href="">Contact</a> 
+        
+        </div>
+    </nav>
+    
+    <div class="about-container">
+        <div class="about-me">
+            <h2 class="about-title">Hello, I am <span style="color: green;">Bhasyam Meenamrutha !</span></h2>
+            <h3 class="about-subtitle">I build simple and clean websites</h3>
+            <p class="about-description"> A passionate software developer and student.
+                I have a strong foundation in programming and <br><br>enjoy solving complex problems.
+            </p>
+            <div>
+                <a href="" class="projects-link"> View Projects <i class="fa-regular fa-eye"></i></a>
+                <a href="" class="download-cv-link">Download CV <i class="fa-solid fa-file-arrow-down"></i></a>
+            </div>
+        </div>
+        <img src="https://iimtu.edu.in/blog/wp-content/uploads/2024/06/9W4drai5SjWgk1IuuH9dUQ.jpeg" alt="profile">
+    </div>
+    <div class="achievements-container">
+        <h2>Achievements</h2>
+        <ul type="square"> <!-- Unordered list have type: disc, square, circle, none -->
+            <li>Won first place in the National Coding Competition 2023.</li>
+            <li>Published a research paper on Artificial Intelligence in a reputed journal.</li>
+            <li>Developed a mobile app that has over 10,000 downloads on the Play Store.</li>
+        </ul>
+        <!-- <ol> Ordered list have type: 1, a, A, i, I 
+            <li>Completed a certification in Web Development.</li>
+            <li>Participated in a hackathon and won the best innovation award.</li>
+        </ol> -->
+        </div>
+
+        <div class="education-container">
+            <h2>Education</h2>
+            <table border="3px" style="border-collapse: collapse; width: 100%; text-align: center;">
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Grade/Percentage</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>Bachelor of Technology in Information Technology</td>
+                    <td>DVR & Dr.HS MIC College of Technology</td>
+                    <td>2022-2026</td>
+                    <td>8.96 </td>
+                    <td>Vijayawada, Andhra Pradesh</td>
+                </tr>
+                <tr>
+                    <td>Intermediate(CBSE)</td>
+                    <td>Kendriya Vidyalaya</td>
+                    <td>2020-2022</td>
+                    <td>83%</td>
+                    <td>Vijayawada, Andhra Pradesh</td>
+                </tr>
+                <tr>
+                    <td>SSC(CBSE)</td>
+                    <td>Kendriya Vidyalaya</td>
+                    <td>2019-2020</td>
+                    <td>87%</td>
+                    <td>Vijayawada, Andhra Pradesh</td>
+                </tr>
+            </table>
+
+        </div>
+        
+        <div class="" projects-container">
+            <h2> Projects</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Project 1: LandLease</h3>
+                    <ul>
+                        <li> Ablockchain-based solution for securely managing land lease agreements.The platform ensures
+                            transparency,
+                            immutability, and trust by digitizing agreements and storing them on the blockchain.</li>
+                        <br>
+                        <li>Tools Used: React.js, Bootstrap CSS, JavaScript, Motoko, Smart Contract.</li>
+                    </ul>
+                    <a href="https://kcorw-fyaaa-aaaan-qzqrq-cai.icp0.io/" target="_blank">View Project</a>
+                </div>
+                <div class="card">
+                    <h3>Project 2: MediTrack</h3>
+                    <ul>
+                        <li> MediTrack is a blockchain-based platform revolutionizing healthcare by securely digitizing
+                            prescriptions and
+                            medical records.Patients consult doctors, who record diagnoses and prescriptions on the
+                            blockchain.
+                            Pharmacists can retrieve this data using the patient’s ID, ensuring seamless access to
+                            accurate medical
+                            information while eliminating paper records, reducing loss, and enhancing data security</li>
+                        <br>
+                        <li>Tools Used: React.js, Bootstrap CSS, JavaScript, Motoko, Smart Contract.</li>
+                    </ul>
+                    <a href="https://pcu4p-kyaaa-aaaag-qndmq-cai.icp0.io/" target="_blank">View Project</a>
+                </div>
+                <div class="card">
+                    <h3>Project 3: BallotChain</h3>
+                    <ul>
+                        <li> BallotChain is a blockchain-based voting platform that allows users to create proposals and
+                            securely cast votes,
+                            ensuring transparency and immutability in decision-making. It leverages decentralized
+                            technology to manage
+                            voting pocesses efficiently.</li>
+                        <li> Tools Used: React.js, Bootstrap CSS, JavaScript, Motoko, Smart Contract.</li>
+                    </ul>
+                    <a href="https://fllh4-2aaaa-aaaag-qkcda-cai.icp0.io/" target="_blank">View Project</a>
+                </div>
+
+            </div>
+
+        </div>
+        
+
+
+        <div class="contact-container">
+            <h2>Contact</h2>
+            <p><i class="fa-solid fa-envelope"></i> Email : <a href="mailto:bhasyam82@gmail.com">bhasyam82@gmail.com</a>
+            </p>
+            <p><i class="fa-brands fa-github"></i> GitHub : <a href="http://github.com/Bhasyam-Meenamrutha"
+                    target="_blank">github.com/Bhasyam-Meenamrutha</a></p>
+            <p><i class="fa-brands fa-linkedin"></i> LinkedIn : <a
+                    href="https://www.linkedin.com/in/bhasyam-meenamrutha-b95a77257/"
+                    target="_blank">linkedin.com/in/bhasyam-meenamrutha</a></p>
+            <p> <i class="fa-solid fa-location-dot"></i> Vijayawada, Andhra Pradesh</p>
+        </div>
+        
+
+        <div class="Declaration-container">
+            <h2>Declaration</h2>
+            <p>I hereby declare that the information provided in this portfolio is true and accurate to the best of my
+                knowledge. I am committed to continuous learning and growth in the field of software development.</p>
+            <p><b>- Bhasyam Meenamrutha</b></p>
+        </div>
+</body>
+
+</html>
