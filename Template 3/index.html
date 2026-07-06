@@ -21,7 +21,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 5%;
-           
+
 
         }
 
@@ -29,9 +29,9 @@
             display: flex;
             align-items: center;
             line-height: 0.4;
-            
+
         }
-          
+
 
         .role img {
             width: 10%;
@@ -39,12 +39,12 @@
             margin-right: 10px;
         }
 
-        .nav-links{
-            
+        .nav-links {
+
             width: 45%;
             display: flex;
             justify-content: space-evenly;
-            
+
 
         }
 
@@ -52,79 +52,263 @@
             color: white;
             text-decoration: none;
             font-size: 1rem;
-            
+
         }
-        .about-container{
-            background-color:rgba(0, 0, 0, 0.925);
+
+        .about-container {
+            background-color: rgba(0, 0, 0, 0.925);
             color: white;
             display: flex;
             justify-content: space-between;
             padding: 3% 30px;
-            
+
         }
-        .about-me{
+
+        .about-me {
             line-height: 0.6;
         }
-        .projects-link,.download-cv-link{
+
+        .projects-link,
+        .download-cv-link {
             color: white;
             text-decoration: none;
-            background-color: green;
+            background-color: #488e32;
+            ;
             font-size: 1.2rem;
             padding: 10px 20px;
         }
-        .download-cv-link{
+
+        .download-cv-link {
             background-color: inherit !important;
             border: 1px solid white;
             margin-left: 10px;
 
         }
 
-        .about-container img{
+        .about-container img {
             width: 30%;
             height: 30%;
         }
-        
 
-        .about-title{
+
+        .about-title {
             font-size: 3rem;
-            
+
         }
-        .about-subtitle{
+
+        .about-subtitle {
             font-size: 2rem;
-            
+
         }
-        .about-description{
+
+        .about-description {
             font-size: 1.2rem;
             margin-bottom: 5%;
             color: gray;
-            
+
         }
+
+        .projects-container {
+            background-color: rgba(0, 0, 0, 0.925);
+            color: white;
+            padding: 20px 20px;
+
+        }
+
+        .projects-container h2 {
+            text-align: center;
+        }
+
+
+        .cards {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .card {
+            width: 30%;
+            border: 1px solid rgba(255, 255, 255, 0.503);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .card li {
+            color: rgb(190, 186, 186);
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card button {
+            background-color: inherit;
+            color: #488e32;
+            padding: 10px;
+            width: 30%;
+            border: 1px solid rgba(255, 255, 255, 0.503);
+            border-radius: 10px;
+            font-size: 1rem
+        }
+
+        .card button:hover {
+            background-color: #488e32;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .services {
+            width: 100%;
+            background-color: #1a1a1a;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+
+        }
+
+        .services h1 {
+            color: white;
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .service-container {
+            display: flex;
+            padding: 0 20px;
+            align-items: stretch;
+            justify-content: space-between;
+
+        }
+
+        .service-box {
+            width: 170px;
+            background-color: #222;
+            border: 1px solid #333;
+            padding-top: 25px;
+            padding-right: 15px;
+            padding-bottom: 25px;
+            padding-left: 15px;
+            text-align: center;
+
+        }
+
+
+        .service-box i {
+            color: #488e32;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .service-box h2 {
+            color: white;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .service-box p {
+            color: #bdbdbd;
+            font-size: 13px;
+            line-height: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .education-container {
+            background-color: black;
+            color: white;
+            padding: 20px 5%;
+            text-align: center;
+        }
+
+        .education-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table-head {
+            background-color: #488e32;
+        }
+
+        .education-container table,
+        .education-container th,
+        .education-container td,
+        .education-container tr {
+            border: 1px solid white;
+            padding: 20px;
+            border-collapse: collapse;
+        }
+
+        .achievements-contacts-parent {
+            background-color: black;
+            display: flex;
+            padding: 20px 5%;
+            color: rgba(255, 255, 255, 0.525);
+            justify-content: space-around;
+
+        }    
+
+        .achievements-contacts-parent div {
+            width: 45%;
+            line-height: 2;
+        }
+
+        .achievements-contacts-parent i {
+            color: #488e32;
+        }
+
+        .achievements-contacts-parent ul, .achievements-contacts-parent h2{
+            margin:0px;
+        
+        }
+
+        .achievements-container li,.contact-container p {
+            font-size: 1.2rem;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        .contact-container a {
+            color: rgba(255, 255, 255, 0.525);
+            text-decoration: none;
+        
+            
+
+        
+
+
+
+
+
     </style>
 </head>
 
 <body>
     <nav>
         <div class="role">
-            <img src="passport.jpg" alt="profile" >
+            <img src="passport.jpg" alt="profile">
             <div class="name">
-            <h1>Bhasyam Meenamrutha</h1>
-            <p>Software Developer | Student</p>
+                <h1>Bhasyam Meenamrutha</h1>
+                <p>Software Developer | Student</p>
             </div>
         </div>
         <div class="nav-links">
-            
-                <a href="">About me</a> 
-                <a href="">Achievements</a> 
-                <a href="">Education</a> 
-                <a href="">Projects</a> 
-                <a href="">Contact</a> 
-        
+
+            <a href="">About me</a>
+            <a href="">Achievements</a>
+            <a href="">Education</a>
+            <a href="">Projects</a>
+            <a href="">Contact</a>
+
         </div>
     </nav>
-    
+
     <div class="about-container">
         <div class="about-me">
-            <h2 class="about-title">Hello, I am <span style="color: green;">Bhasyam Meenamrutha !</span></h2>
+            <h2 class="about-title">Hello, I am <span style="color:  #488e32;;">Bhasyam Meenamrutha !</span></h2>
             <h3 class="about-subtitle">I build simple and clean websites</h3>
             <p class="about-description"> A passionate software developer and student.
                 I have a strong foundation in programming and <br><br>enjoy solving complex problems.
@@ -136,104 +320,158 @@
         </div>
         <img src="https://iimtu.edu.in/blog/wp-content/uploads/2024/06/9W4drai5SjWgk1IuuH9dUQ.jpeg" alt="profile">
     </div>
-    <div class="achievements-container">
-        <h2>Achievements</h2>
-        <ul type="square"> <!-- Unordered list have type: disc, square, circle, none -->
-            <li>Won first place in the National Coding Competition 2023.</li>
-            <li>Published a research paper on Artificial Intelligence in a reputed journal.</li>
-            <li>Developed a mobile app that has over 10,000 downloads on the Play Store.</li>
-        </ul>
-        <!-- <ol> Ordered list have type: 1, a, A, i, I 
+    <div class="services">
+
+        <h1>What I Do</h1>
+
+        <div class="service-container">
+
+            <div class="service-box">
+                <i class="fas fa-cubes"></i>
+                <h2>Blockchain</h2>
+                <p>Building secure, transparent, and decentralized digital solutions.</p>
+            </div>
+
+            <div class="service-box">
+                <i class="fab fa-react"></i>
+                <h2>React.js</h2>
+                <p>Creating interactive and reusable user interfaces for modern web apps.</p>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-database"></i>
+                <h2>Java</h2>
+                <p>Developing reliable backend logic and application features in Java.</p>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-server"></i>
+                <h2>MySQL</h2>
+                <p>Designing and managing structured data with efficient database queries.</p>
+            </div>
+
+
+            <div class="service-box">
+                <i class="fas fa-globe"></i>
+                <h2>ICP</h2>
+                <p>Building scalable apps on the Internet Computer Protocol ecosystem.</p>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-laptop-code"></i>
+                <h2>HTML, CSS & JavaScript</h2>
+                <p>Crafting responsive and clean front-end experiences from the ground up.</p>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-code-fork"></i>
+                <h2>Git & GitHub</h2>
+                <p>Managing version control, collaboration, and code history with confidence.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="education-container">
+        <h2>Education</h2>
+        <table>
+            <tr class="table-head">
+                <th>Qualification</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Grade/Percentage</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>Bachelor of Technology in Information Technology</td>
+                <td>DVR & Dr.HS MIC College of Technology</td>
+                <td>2022-2026</td>
+                <td>8.96 </td>
+                <td>Vijayawada, Andhra Pradesh</td>
+            </tr>
+            <tr>
+                <td>Intermediate(CBSE)</td>
+                <td>Kendriya Vidyalaya</td>
+                <td>2020-2022</td>
+                <td>83%</td>
+                <td>Vijayawada, Andhra Pradesh</td>
+            </tr>
+            <tr>
+                <td>SSC(CBSE)</td>
+                <td>Kendriya Vidyalaya</td>
+                <td>2019-2020</td>
+                <td>87%</td>
+                <td>Vijayawada, Andhra Pradesh</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+
+    <div class="projects-container">
+        <h2>My Projects</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./LandLease.png" alt="Project 1">
+                <h3>Project 1: LandLease</h3>
+                <ul>
+                    <li> A blockchain-based solution for securely managing land lease agreements.The platform ensures
+                        transparency,
+                        immutability, and trust by digitizing agreements and storing them on the blockchain.</li>
+                    <br>
+                    <li>Tools Used: React.js, Bootstrap CSS, JavaScript, Motoko, Smart Contract.</li>
+                </ul>
+                <button onclick="window.open('https://kcorw-fyaaa-aaaan-qzqrq-cai.icp0.io/', '_blank')">View
+                    Project</button>
+            </div>
+            <div class="card">
+                <img src="./MediTrack.png" alt="Project 2">
+                <h3>Project 2: MediTrack</h3>
+                <ul>
+                    <li>MediTrack is a blockchain-based healthcare platform for securely managing digital prescriptions
+                        and medical records. It enables secure access to verified patient data while reducing paperwork.
+                    </li><br>
+                    <li>Tools Used: React.js, Bootstrap CSS, JavaScript, Motoko, Smart Contract.</li>
+                </ul>
+                <button onclick="window.open('https://pcu4p-kyaaa-aaaag-qndmq-cai.icp0.io/', '_blank')">View
+                    Project</button>
+            </div>
+            <div class="card">
+                <img src="./BallotChain.png" alt="Project 3">
+                <h3>Project 3: BallotChain</h3>
+                <ul>
+                    <li>BallotChain is a blockchain-based voting platform that enables secure proposal creation and
+                        transparent vote casting. It ensures immutable, tamper-proof decision-making through
+                        decentralized technology.
+                    </li><br>
+                    <li> Tools Used: React.js, Bootstrap CSS, JavaScript, Motoko, Smart Contract.</li>
+                </ul>
+                <button onclick="window.open('https://fllh4-2aaaa-aaaag-qkcda-cai.icp0.io/', '_blank')">View
+                    Project</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="achievements-contacts-parent" >
+        <div class="achievements-container">
+            <h2 style="color: white;">Achievements</h2>
+            <ul type="square"> <!-- Unordered list have type: disc, square, circle, none -->
+                <li><i class="fa-solid fa-circle-check"></i> Secured First Place in CTRL + Move: Hackathon Bangalore Edition- September, 2025</li>
+                <li> <i class="fa-solid fa-circle-check"></i> Secured First Place in Build on Aptos Vijayawada Edition- August, 2025.</li>
+                <li><i class="fa-solid fa-circle-check"></i>  Recipient of Academic Excellence award, I & II Semesters- 2022, 2023</li>
+            </ul>
+            <!-- <ol> Ordered list have type: 1, a, A, i, I 
             <li>Completed a certification in Web Development.</li>
             <li>Participated in a hackathon and won the best innovation award.</li>
         </ol> -->
         </div>
 
-        <div class="education-container">
-            <h2>Education</h2>
-            <table border="3px" style="border-collapse: collapse; width: 100%; text-align: center;">
-                <tr>
-                    <th>Qualification</th>
-                    <th>Institution</th>
-                    <th>Year</th>
-                    <th>Grade/Percentage</th>
-                    <th>Location</th>
-                </tr>
-                <tr>
-                    <td>Bachelor of Technology in Information Technology</td>
-                    <td>DVR & Dr.HS MIC College of Technology</td>
-                    <td>2022-2026</td>
-                    <td>8.96 </td>
-                    <td>Vijayawada, Andhra Pradesh</td>
-                </tr>
-                <tr>
-                    <td>Intermediate(CBSE)</td>
-                    <td>Kendriya Vidyalaya</td>
-                    <td>2020-2022</td>
-                    <td>83%</td>
-                    <td>Vijayawada, Andhra Pradesh</td>
-                </tr>
-                <tr>
-                    <td>SSC(CBSE)</td>
-                    <td>Kendriya Vidyalaya</td>
-                    <td>2019-2020</td>
-                    <td>87%</td>
-                    <td>Vijayawada, Andhra Pradesh</td>
-                </tr>
-            </table>
-
-        </div>
-        
-        <div class="" projects-container">
-            <h2> Projects</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Project 1: LandLease</h3>
-                    <ul>
-                        <li> Ablockchain-based solution for securely managing land lease agreements.The platform ensures
-                            transparency,
-                            immutability, and trust by digitizing agreements and storing them on the blockchain.</li>
-                        <br>
-                        <li>Tools Used: React.js, Bootstrap CSS, JavaScript, Motoko, Smart Contract.</li>
-                    </ul>
-                    <a href="https://kcorw-fyaaa-aaaan-qzqrq-cai.icp0.io/" target="_blank">View Project</a>
-                </div>
-                <div class="card">
-                    <h3>Project 2: MediTrack</h3>
-                    <ul>
-                        <li> MediTrack is a blockchain-based platform revolutionizing healthcare by securely digitizing
-                            prescriptions and
-                            medical records.Patients consult doctors, who record diagnoses and prescriptions on the
-                            blockchain.
-                            Pharmacists can retrieve this data using the patient’s ID, ensuring seamless access to
-                            accurate medical
-                            information while eliminating paper records, reducing loss, and enhancing data security</li>
-                        <br>
-                        <li>Tools Used: React.js, Bootstrap CSS, JavaScript, Motoko, Smart Contract.</li>
-                    </ul>
-                    <a href="https://pcu4p-kyaaa-aaaag-qndmq-cai.icp0.io/" target="_blank">View Project</a>
-                </div>
-                <div class="card">
-                    <h3>Project 3: BallotChain</h3>
-                    <ul>
-                        <li> BallotChain is a blockchain-based voting platform that allows users to create proposals and
-                            securely cast votes,
-                            ensuring transparency and immutability in decision-making. It leverages decentralized
-                            technology to manage
-                            voting pocesses efficiently.</li>
-                        <li> Tools Used: React.js, Bootstrap CSS, JavaScript, Motoko, Smart Contract.</li>
-                    </ul>
-                    <a href="https://fllh4-2aaaa-aaaag-qkcda-cai.icp0.io/" target="_blank">View Project</a>
-                </div>
-
-            </div>
-
-        </div>
-        
-
-
         <div class="contact-container">
-            <h2>Contact</h2>
+            <h2 style="color: white;">Contact</h2>
             <p><i class="fa-solid fa-envelope"></i> Email : <a href="mailto:bhasyam82@gmail.com">bhasyam82@gmail.com</a>
             </p>
             <p><i class="fa-brands fa-github"></i> GitHub : <a href="http://github.com/Bhasyam-Meenamrutha"
@@ -243,14 +481,17 @@
                     target="_blank">linkedin.com/in/bhasyam-meenamrutha</a></p>
             <p> <i class="fa-solid fa-location-dot"></i> Vijayawada, Andhra Pradesh</p>
         </div>
-        
+    </div>
 
-        <div class="Declaration-container">
-            <h2>Declaration</h2>
-            <p>I hereby declare that the information provided in this portfolio is true and accurate to the best of my
-                knowledge. I am committed to continuous learning and growth in the field of software development.</p>
-            <p><b>- Bhasyam Meenamrutha</b></p>
-        </div>
+
+
+
+    <div class="Declaration-container">
+        <h2>Declaration</h2>
+        <p>I hereby declare that the information provided in this portfolio is true and accurate to the best of my
+            knowledge. I am committed to continuous learning and growth in the field of software development.</p>
+        <p><b>- Bhasyam Meenamrutha</b></p>
+    </div>
 </body>
 
 </html>

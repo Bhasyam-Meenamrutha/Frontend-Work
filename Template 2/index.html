@@ -4,98 +4,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Website Building</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <style>
+        body {
+            background-image: url("https://i.pinimg.com/736x/b4/eb/ae/b4ebaed11f39bfbf2d2a9754e995f3c2.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .form-container {
+            background: #1a74fc;
+            background: -webkit-linear-gradient(to right, #33f740, #049d32);
+            background: linear-gradient(to right, #f73933, #690a0a);
+            width: 30%;
+            border-radius: 10px;
+            margin: auto;
+            padding: 20px 20px;
+        }
+
+        .form-title {
+            text-align: center;
+            line-height: 0.6;
+            color: white;
+        }
+
+        .form-field, .form-checkbox {
+            margin: 20px 0px;
+            line-height: 2;
+            color: white;
+        }
+
+        .input-field , .drop-down{
+            display: flex;
+            border-radius: 5px;
+            padding: 10px 15px;
+            border: 1px solid white;
+            background-color: white;
+
+        }
+
+        .input-field input, .drop-down select{
+            flex: 1;
+            border: none;
+            outline: none;
+        }
+
+        .form-container label{
+            color: white;
+        }
+
+        
+        .form-fotter {
+            text-align: center;
+            margin:15px 0px;
+            color: white; 
+        }
+
+        .form-radio {
+            color: white;
+        }
+
+        .form-btn{
+            background-color: #8d0b0d;
+            border-radius: 25px;
+            padding: 15px  10px;
+            text-align: center;
+
+        }
+
+        .form-btn button{
+            font-size: 1rem;
+            border: none;
+            background-color:inherit;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .form-checkbox a, .form-fotter a{
+            color: rgb(148, 4, 4);
+            text-decoration: none;
+
+        }   
+        
+
+
+
+
+    </style>
+
+</head>
+
 <body>
-    </head>
 
-    <body>
-        <form action="" method="">
-            <div class="form-title">
-                <h2>Create your Account</h2>
-                <h3>Join us now!</h3>
+    <form class=" form-container" action="">
+        <div class="form-title">
+            <h2>Create your Account</h2>
+            <h3>Join us now </h3>
+        </div>
+        <div class="form-field">
+            <label for="">Full Name</label>
+            <div class="input-field">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder=" enter Full Name" name="fullname" required />
             </div>
-            <div class="form-field">
-                <label for="name">Full Name</label>
-                <div class="input-field">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                </div>
-            </div>
-            <div class="form-field">
-                <label for="email">Email</label>
-                <div class="input-field">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-            </div>
-            <div class="form-field">
-                <label for="password">Password</label>
-                <div class="input-field">
-                    <i class="fa-solid fa-lock"></i>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                </div>
-            </div>
-            <div class="form-field">
-                <label for="confirm-password">Confirm Password</label>
-                <div class="input-field">
-                    <i class="fa-solid fa-lock"></i>
-                    <input type="password" id="confirm-password" name="confirm-password"
-                        placeholder="Confirm your password" required>
-                </div>
-            </div>
-            <div class="form-radio">
-                <label for="gender">Gender</label>
+        </div>
 
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
+        <div class="form-field">
+            <label for="">Email Address</label>
+            <div class="input-field">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" placeholder=" enter your  Email" name="email" required />
+            </div>
 
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
+        </div>
 
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label>
+        <div class="form-field">
+            <label for="">Password</label>
+            <div class="input-field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder=" Create a Password" name="password" required />
+                <i class="fa-solid fa-eye"></i>
             </div>
-            <div class="form-field">
-                <label for="dob">Date of Birth</label>
-                <div class="input-field">
-                    <i class="fa-solid fa-calendar"></i>
-                    <input type="date" id="dob" name="dob" placeholder="Select your date of birth" required>
-                </div>
+        </div>
+
+
+        <div class="form-field">
+            <label for="">Confirm Password</label>
+            <div class="input-field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder=" Confirm your Password" name="confirmpassword" />
+                <i class="fa-solid fa-eye"></i>
             </div>
-            <div class="form-field">
-                <label for="country">Country</label>
-                <div class="drop-down">
-                    <i class="fa-solid fa-globe"></i>
-                    <select id="country" name="country" required>
-                        <option value="">Select your country</option>
-                        <option value="usa">United States</option>
-                        <option value="uk">United Kingdom</option>
-                        <option value="canada">Canada</option>
-                        <option value="australia">Australia</option>
-                        <option value="india">India</option>
-                    </select>
-                </div>
+        </div>
+
+        <div class="form-radio">
+            <label for="">Gender</label>
+            <div class="radio-options">
+                <input type="radio" id="gmale" name="gender">
+                <label for="gmale">Male</label>
+
+                <input type="radio" id="gfemale" name="gender">
+                <label for="gfemale">Female</label>
+
+                <input type="radio" id="gother" name="gender">
+                <label for="gother">Other</label>
             </div>
-            <div class="form-checkbox">
+        </div>
+
+        <div class="form-field">
+            <label for="">Date of Birth</label>
+            <div class="input-field">
+                <input type="date" placeholder=" Select your Date of Birth" name="dob" required />
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label for="">Country</label>
+            <div class="drop-down">
+                <i class="fa-solid fa-globe"></i>
+                <select name="country">
+                    <option value="select">Select your Country</option>
+                    <option value="india">India</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="ca">Canada</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-checkbox">
                 <input type="checkbox" id="terms" name="terms" required>
                 <span for="terms">I agree to the <a href="#">Terms of service </a> and <a href="#">Privacy
                         Policy</a></span>
 
             </div>
 
-            <div class="Form-btn">
-                <button type="submit">Register now</button>
-            </div>
-            <div class="form-footer">
-                <span>Already have an account? <a href="#">Login here</a></span>
-            </div>
+        <div class="form-btn">
+            <button> Register Now</button>
+        </div>
+        <div class="form-fotter">
+            <span>Already have an account? </span>
+            <a href="#">Login</a>
+        </div>
+    </form>
 
-
-        </form>
-    </body>
+</body>
 
 </html>
