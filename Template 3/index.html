@@ -20,7 +20,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 5%;
+            padding: 10px 5%;
+            position: sticky;
+            top: 0;
 
 
         }
@@ -34,8 +36,8 @@
 
 
         .role img {
-            width: 10%;
-            height: 10%;
+            width: 8%;
+            height: 8%;
             margin-right: 10px;
         }
 
@@ -178,6 +180,7 @@
             padding: 0 20px;
             align-items: stretch;
             justify-content: space-between;
+            flex-wrap: wrap;
 
         }
 
@@ -247,7 +250,7 @@
             color: rgba(255, 255, 255, 0.525);
             justify-content: space-around;
 
-        }    
+        }
 
         .achievements-contacts-parent div {
             width: 45%;
@@ -258,31 +261,78 @@
             color: #488e32;
         }
 
-        .achievements-contacts-parent ul, .achievements-contacts-parent h2{
-            margin:0px;
-        
+        .achievements-contacts-parent ul,
+        .achievements-contacts-parent h2 {
+            margin: 0px;
+
         }
 
-        .achievements-container li,.contact-container p {
+        .achievements-container li,
+        .contact-container p {
             font-size: 1.2rem;
         }
 
-        ul{
+        ul {
             list-style-type: none;
         }
 
         .contact-container a {
             color: rgba(255, 255, 255, 0.525);
             text-decoration: none;
+        }
+
+        .Declaration-container {
+
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px 5%;
+            line-height: 1.5;
+        }
+
+        .declaration-content {
+
+            display: flex;
+
+            justify-content: space-between;
+            border: 1px solid rgba(255, 255, 255, 0.525);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .declaration-signature {
+            position: relative;
+            text-align: center;
+        }
+
+        .declaration-signature::after {
+            content: "";
+            position: absolute;
+            left: 8px;
+            top: -10px;
+            width: 150px;
+            height: 2px;
+            background-color: #488e32;
+        }
+
+        @media (max-width: 430px) {
+            nav {
+                flex-wrap: wrap;
+            }
+        .nav-links {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .about-container {
+            flex-direction: column;
+            
+            line-height: 3;
+        }
+        .about-title {
+            font-size: 2rem;
+        }
         
             
-
-        
-
-
-
-
-
+    }
     </style>
 </head>
 
@@ -456,13 +506,16 @@
 
     </div>
 
-    <div class="achievements-contacts-parent" >
+    <div class="achievements-contacts-parent">
         <div class="achievements-container">
             <h2 style="color: white;">Achievements</h2>
             <ul type="square"> <!-- Unordered list have type: disc, square, circle, none -->
-                <li><i class="fa-solid fa-circle-check"></i> Secured First Place in CTRL + Move: Hackathon Bangalore Edition- September, 2025</li>
-                <li> <i class="fa-solid fa-circle-check"></i> Secured First Place in Build on Aptos Vijayawada Edition- August, 2025.</li>
-                <li><i class="fa-solid fa-circle-check"></i>  Recipient of Academic Excellence award, I & II Semesters- 2022, 2023</li>
+                <li><i class="fa-solid fa-circle-check"></i> Secured First Place in CTRL + Move: Hackathon Bangalore
+                    Edition- September, 2025</li>
+                <li> <i class="fa-solid fa-circle-check"></i> Secured First Place in Build on Aptos Vijayawada Edition-
+                    August, 2025.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Recipient of Academic Excellence award, I & II Semesters-
+                    2022, 2023</li>
             </ul>
             <!-- <ol> Ordered list have type: 1, a, A, i, I 
             <li>Completed a certification in Web Development.</li>
@@ -486,12 +539,17 @@
 
 
 
-    <div class="Declaration-container">
+    <footer class="Declaration-container">
         <h2>Declaration</h2>
-        <p>I hereby declare that the information provided in this portfolio is true and accurate to the best of my
-            knowledge. I am committed to continuous learning and growth in the field of software development.</p>
-        <p><b>- Bhasyam Meenamrutha</b></p>
-    </div>
+        <div class="declaration-content">
+            <p>I hereby declare that the information provided in this portfolio is true and accurate to the best of my
+                knowledge.
+                <br>I am committed to continuous learning and growth in the field of software development.
+            </p>
+            <p class="declaration-signature"> Bhasyam Meenamrutha</p>
+        </div>
+
+    </footer>
 </body>
 
 </html>
